@@ -11,6 +11,7 @@ public class BulletMovement : TakeDamaged
     [SerializeField] LayerMask enemyLayer;
     public Weapon weapon;
 
+    [SerializeField] private GameObject hitEffectPrefab;
 
     private bool isEnemyWeapon = false;
 
@@ -111,18 +112,34 @@ public class BulletMovement : TakeDamaged
         {
             if (collision.TryGetComponent<IDamagable>(out var damagable))
             {
+                CreateNewEffect(hitEffectPrefab);
                 Attack(damagable);
             }
-            ObjectPool.instance.DelayReturnToPool(gameObject);
+            ReturnToPool(gameObject);
+            ReturnToPool(hitEffectPrefab);
         }
 
         else if (collision.CompareTag("Enemy") && !isEnemyWeapon)
         {
             if (collision.TryGetComponent<IDamagable>(out var damagable))
             {
+                CreateNewEffect(hitEffectPrefab);
                 Attack(damagable);
             }
-            ObjectPool.instance.DelayReturnToPool(gameObject);
+            ReturnToPool(gameObject);
+            ReturnToPool(hitEffectPrefab);
         }
+    }
+
+    private void CreateNewEffect(GameObject effect)
+    {
+        GameObject newObjEffect = ObjectPool.instance.GetObject(effect);
+
+        newObjEffect.transform.position = transform.position;
+    }
+
+    private void ReturnToPool(GameObject obj)
+    {
+        ObjectPool.instance.DelayReturnToPool(obj);
     }
 }

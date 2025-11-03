@@ -16,6 +16,8 @@ public class DamagePopupAnimation : MonoBehaviour
     {
         tmp = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         origin = transform.position;
+
+        Invoke(nameof(ReturnDamagePopupToPool), 1f);
     }
 
     void Update()
@@ -24,5 +26,10 @@ public class DamagePopupAnimation : MonoBehaviour
         transform.localScale = Vector3.one * scaleCurve.Evaluate(time);
         transform.position = origin + new Vector3(widthCurve.Evaluate(time), 1 + heightCurve.Evaluate(time), 0);
         time += Time.deltaTime;
+    }
+
+    private void ReturnDamagePopupToPool()
+    {
+        ObjectPool.instance.DelayReturnToPool(gameObject);
     }
 }

@@ -12,10 +12,6 @@ public class DamagePopupGenerator : MonoBehaviour
         Instance = this;
     }
 
-    private void Start()
-    {
-        Invoke(nameof(ReturnToPool), 2f);
-    }
 
     public void DisplayDamage(Vector3 position, float damageText, bool isCrit)
     {
@@ -32,8 +28,4 @@ public class DamagePopupGenerator : MonoBehaviour
             temp.color = normalColor;
     }
 
-    private void ReturnToPool()
-    {
-        ObjectPool.instance.DelayReturnToPool(gameObject);
-    }
 }

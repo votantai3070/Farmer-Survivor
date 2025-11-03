@@ -73,6 +73,7 @@
     <Compile Include="Assets\_Data\Scripts\UI\InventorySlot.cs" />
     <Compile Include="Assets\IsometricElfFreeVer\scripts\PlayerManager.cs" />
     <Compile Include="Assets\_Data\Scripts\UI\DamagePopupAnimation.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightFlicker.cs" />
     <Compile Include="Assets\_Data\Scripts\Knockback.cs" />
     <Compile Include="Assets\_Data\Scripts\Weapons\ObjectDestroy.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\StateMachine.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="Assets\_Data\Scripts\Weapons\CloseWeaponMovement.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Range\HitState_Range.cs" />
     <Compile Include="Assets\_Data\Scripts\Weapons\BulletMovement.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\_Data\Scripts\UIManager.cs" />
     <Compile Include="Assets\IsometricElfFreeVer\scripts\StoneManager.cs" />
     <Compile Include="Assets\_Data\Scripts\ScriptableObjects\WeaponData.cs" />
@@ -98,6 +100,7 @@
     <Compile Include="Assets\_Data\Scripts\Character\Player\PlayerAttack.cs" />
     <Compile Include="Assets\_Data\Scripts\Items\BulletItemController.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Player\MoveState_Player.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RotateCamera.cs" />
     <Compile Include="Assets\_Data\Scripts\Interface\IGameManager.cs" />
     <Compile Include="Assets\_Data\Scripts\GameManager.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Player\PlayerGhostDestroy.cs" />
@@ -105,6 +108,8 @@
     <Compile Include="Assets\_Data\Scripts\Upgrade\AvailableUpgrade.cs" />
     <Compile Include="Assets\_Data\Scripts\ScriptableObjects\ItemData.cs" />
     <Compile Include="Assets\_Data\Scripts\Interface\IDamagable.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoRotate.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Melee\IdleState_Melee.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Player\IdleState_Player.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Melee\MoveState_Melee.cs" />
@@ -133,8 +138,11 @@
     <Compile Include="Assets\_Data\Scripts\HotBarManager.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Melee\DeadState_Melee.cs" />
     <Compile Include="Assets\_Data\Scripts\Items\SpeedItemController.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightIntensityFade.cs" />
     <Compile Include="Assets\_Data\Scripts\Weapons\StoneDestroy.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_New.cs" />
     <Compile Include="Assets\_Data\Scripts\Menu\ChooseUpgradeCharacter.cs" />
+    <Compile Include="Assets\_Data\Scripts\UI\EnvironmentEffect.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Melee\Enemy_Melee.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Player\AttackAMS.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Range\DeadState_Range.cs" />
@@ -143,15 +151,22 @@
     <Compile Include="Assets\_Data\Scripts\Character\Player\PlayerDash.cs" />
     <Compile Include="Assets\_Data\Scripts\Items\MagnetController.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Range\Enemy_Range.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\_Data\Scripts\Weapons\TakeDamaged.cs" />
     <Compile Include="Assets\_Data\Scripts\Weapons\Bullet.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_Translate.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\JMO Assets\Cartoon FX (legacy)\Shaders\CFX3 Multiply Color.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
+    <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_SETTINGS.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\JMO Assets\Cartoon FX (legacy)\CartoonFX Free.txt" />
     <None Include="Assets\PixelBattleText\Resources\PixelBorder.shader" />
+    <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\IsometricElfFreeVer\Readme_en.txt" />
@@ -166,11 +181,15 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Prefabs\Texts\_Make your own text effect.txt" />
+    <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_PASSES.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\JMO Assets\Cartoon FX (legacy)\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\IsometricElfFreeVer\Readme_jp.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_URP.cginc" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
@@ -1352,10 +1371,6 @@
       <HintPath>Library\ScriptAssemblies\Unity.Collections.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.2D.Tilemap.Extras.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
       <Private>False</Private>
@@ -1370,6 +1385,10 @@
     </Reference>
     <Reference Include="Unity.Multiplayer.Center.Common">
       <HintPath>Library\ScriptAssemblies\Unity.Multiplayer.Center.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Extras.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
@@ -1478,6 +1497,18 @@
       <Project>{C467DC49-921F-AA34-E252-D75FD60297CD}</Project>
       <Name>AstarPathfindingProject</Name>
     </ProjectReference>
+    <ProjectReference Include="CFXRDemo.csproj">
+      <Project>{E435CDFF-455A-DADD-E836-4E32AEDFE7E5}</Project>
+      <Name>CFXRDemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXR.WelcomeScreen.csproj">
+      <Project>{D4667386-DDEA-F4A1-D011-ED84572CF5C9}</Project>
+      <Name>CFXR.WelcomeScreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXREditor.csproj">
+      <Project>{2FA444C4-DD4C-D9B7-6798-60CA888B2AAE}</Project>
+      <Name>CFXREditor</Name>
+    </ProjectReference>
     <ProjectReference Include="PackageToolsEditor.csproj">
       <Project>{43E7AF0E-F07D-3B3E-D573-665E6BDD445D}</Project>
       <Name>PackageToolsEditor</Name>
@@ -1485,6 +1516,18 @@
     <ProjectReference Include="AnimatedBattleText.Example.Damage.csproj">
       <Project>{5156B24C-B182-7AA2-2C1F-8620E8E33C34}</Project>
       <Name>AnimatedBattleText.Example.Damage</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXRRuntime.csproj">
+      <Project>{9D806E7D-B9B0-2417-FF20-671D1160C9A1}</Project>
+      <Name>CFXRRuntime</Name>
+    </ProjectReference>
+    <ProjectReference Include="KinoBloom.Runtime.csproj">
+      <Project>{C614C260-EE4F-7F92-A857-69924983FA29}</Project>
+      <Name>KinoBloom.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
+      <Project>{70209137-ED9D-861F-53C5-A3BDAC4ED767}</Project>
+      <Name>ToonyColorsPro.Demo.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="BattleText.csproj">
       <Project>{75761254-3504-D87A-B3A4-5040CE4471AA}</Project>

@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class SpeedItemController : Item
 {
     protected override void Awake()

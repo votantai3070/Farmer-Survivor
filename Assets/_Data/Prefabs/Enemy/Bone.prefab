@@ -373,10 +373,10 @@ GameObject:
   - component: {fileID: 5991435393546550169}
   - component: {fileID: 910616909284161679}
   - component: {fileID: 7049656898329379209}
-  - component: {fileID: 4230775011823367014}
-  - component: {fileID: 6852073849615474218}
-  - component: {fileID: 8798522706383906694}
   - component: {fileID: 7780448287253619505}
+  - component: {fileID: 6852073849615474218}
+  - component: {fileID: 4230775011823367014}
+  - component: {fileID: 8798522706383906694}
   - component: {fileID: 9208525287423821414}
   m_Layer: 0
   m_Name: BoneGFX
@@ -504,29 +504,42 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4230775011823367014
-MonoBehaviour:
+--- !u!58 &7780448287253619505
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6553105581394549123}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e059716eb1c01b4c887d758013fd524, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterData: {fileID: 11400000, guid: 144f6c9fd2663ab4d9b638dcded2ccfa, type: 2}
-  charhealthSlider: {fileID: 5846981590372914321}
-  playerHpText: {fileID: 0}
-  idleTime: 1
-  aIPathSettings:
-    maxSpeed: 3
-    endReachedDistance: 1
-    repathRate: 1.5
-  enemyName: 3
-  spriteName: Bones_SingleSkull_Idle_0
-  attackCooldown: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.7
 --- !u!70 &6852073849615474218
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -564,6 +577,30 @@ CapsuleCollider2D:
   m_Offset: {x: 0.50951916, y: 0.08916695}
   m_Size: {x: 2.0690856, y: 1.4067142}
   m_Direction: 1
+--- !u!114 &4230775011823367014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6553105581394549123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e059716eb1c01b4c887d758013fd524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterData: {fileID: 11400000, guid: 144f6c9fd2663ab4d9b638dcded2ccfa, type: 2}
+  charhealthSlider: {fileID: 5846981590372914321}
+  playerHpText: {fileID: 0}
+  idleTime: 1
+  aIPathSettings:
+    maxSpeed: 3
+    endReachedDistance: 1
+    repathRate: 1.5
+  enemyType: 0
+  enemyName: 3
+  spriteName: Bones_SingleSkull_Idle_0
+  attackCooldown: 1
 --- !u!114 &8798522706383906694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -576,42 +613,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f5df7ee37f530d4f80e5bc4aac01b95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!58 &7780448287253619505
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6553105581394549123}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.7
 --- !u!114 &9208525287423821414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -625,6 +626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyWeaponData: {fileID: 11400000, guid: 2ac4affa8f30cd5469ba640be944fb5b, type: 2}
+  hitEffectPrefab: {fileID: 100004, guid: f95ff734540a0d749be6571b6cb5b37f, type: 3}
 --- !u!1 &8839268392342906809
 GameObject:
   m_ObjectHideFlags: 0

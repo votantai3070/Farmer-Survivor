@@ -9,12 +9,15 @@ public struct PlayerSettings
 
 public class PlayerController : Character
 {
+    [Header("Player Controller Setting")]
     public PlayerControls controls;
     public PlayerSettings settings;
-    [Header("Player Controller Setting")]
-    [HideInInspector] public bool isAttacked = false;
     public PlayerAnimation playerAnimation;
+    [HideInInspector] public bool isAttacked = false;
+
+    [Header("Speed")]
     private bool isBootedSpeed = false;
+    [SerializeField] private GameObject speedEffectPrefab;
 
     public Rigidbody2D rb { get; private set; }
     public PlayerController controller { get; private set; }
@@ -79,38 +82,34 @@ public class PlayerController : Character
     {
         isBootedSpeed = true;
         settings.speed += boostAmount;
+
+        GameObject newEffect = ObjectPool.instance.GetObject(speedEffectPrefab);
+        newEffect.transform.SetParent(transform, false);
+
         yield return new WaitForSeconds(duration);
+
+        ObjectPool.instance.DelayReturnToPool(newEffect);
+
         settings.speed -= boostAmount;
         isBootedSpeed = false;
     }
 
     public bool IsBoostedSpeed() => isBootedSpeed;
 
-    public void HandleAttack()
-    {
-        isAttacked = true;
-    }
+    public void HandleAttack() => isAttacked = true;
 
-    public void StopAttack()
-    {
-        isAttacked = false;
-    }
+    public void StopAttack() => isAttacked = false;
 
     protected override void Die()
     {
         base.Die();
-
     }
 
     public void DeadAnimation()
     {
         if (CurrentHealth <= 0)
-        {
             stateMachine.ChangeState(deadState);
-        }
     }
-
-
 
     private void OnEnable()
     {

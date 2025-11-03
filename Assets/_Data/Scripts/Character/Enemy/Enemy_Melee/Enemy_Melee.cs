@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class Enemy_Melee : Enemy
@@ -39,8 +38,6 @@ public class Enemy_Melee : Enemy
     protected override void Update()
     {
         base.Update();
-
-        Debug.Log("Capsule: " + capsuleCollider.enabled);
 
         stateMachine.currentState.Update();
     }

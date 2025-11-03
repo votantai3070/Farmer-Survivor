@@ -1,10 +1,10 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class AttackState_Melee : CharacterState
 {
     private Enemy_Melee enemy;
     private float lastAttackTime = -10f;
+
 
     public AttackState_Melee(Enemy enemyBase, StateMachine stateMachine, string animBoolName) : base(enemyBase, stateMachine, animBoolName)
     {
@@ -18,6 +18,7 @@ public class AttackState_Melee : CharacterState
         //Debug.Log("Enter Attack State");
 
         enemy.EnableCollider2D(true);
+
     }
 
     public override void Exit()
@@ -25,6 +26,7 @@ public class AttackState_Melee : CharacterState
         base.Exit();
 
         enemy.EnableCollider2D(false);
+
     }
 
     public override void Update()
@@ -36,7 +38,6 @@ public class AttackState_Melee : CharacterState
         Attack();
 
         enemy.DeadAnimation();
-
     }
 
     private void Attack()

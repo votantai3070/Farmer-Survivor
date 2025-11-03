@@ -265,6 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyWeaponData: {fileID: 11400000, guid: 1de3cabaa7b61384b8ab86a4ceeb4dcc, type: 2}
+  hitEffectPrefab: {fileID: 100004, guid: f95ff734540a0d749be6571b6cb5b37f, type: 3}
 --- !u!1 &2303835589568145589
 GameObject:
   m_ObjectHideFlags: 0

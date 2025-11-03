@@ -36,7 +36,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (Time.timeScale == 0f) return;
 
-        InputEvents();
+        AssignInputEvents();
     }
 
     void HandlePlayerAttack(Weapon weapon)
@@ -72,7 +72,7 @@ public class PlayerAttack : MonoBehaviour
         weapon.Shooting(angle, currentBulletPrefab, firePoint, weapon, bullet.currentAmmo);
     }
 
-    private void InputEvents()
+    private void AssignInputEvents()
     {
         controls = player.controls;
 

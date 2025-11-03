@@ -15,6 +15,7 @@ TagManager:
   - Chest
   - Speed
   - Magnet
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - Hitbox_Player
   - Hurtbox_Enemy
   - Popup
-  - 
+  - VFX
   - 
   - 
   - 

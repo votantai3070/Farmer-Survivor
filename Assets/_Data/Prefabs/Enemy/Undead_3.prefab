@@ -614,6 +614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyWeaponData: {fileID: 11400000, guid: b2f7e09612658874284636a54cb853c8, type: 2}
+  hitEffectPrefab: {fileID: 100004, guid: f95ff734540a0d749be6571b6cb5b37f, type: 3}
 --- !u!58 &6571705609643934055
 CircleCollider2D:
   m_ObjectHideFlags: 0

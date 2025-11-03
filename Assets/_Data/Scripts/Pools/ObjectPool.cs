@@ -8,6 +8,7 @@ public class ObjectPool : MonoBehaviour
     [SerializeField] int poolSize = 5;
     Dictionary<GameObject, Queue<GameObject>> poolDict = new();
 
+    #region Prefab
     [SerializeField] GameObject ratPrefab;
     [SerializeField] GameObject batPrefab;
     [SerializeField] GameObject undead1Prefab;
@@ -16,6 +17,8 @@ public class ObjectPool : MonoBehaviour
     [SerializeField] GameObject bonePrefab;
     [SerializeField] GameObject golemPrefab;
     [SerializeField] GameObject damagePrefab;
+    [SerializeField] GameObject hitEffectPrefab;
+    #endregion
 
     private void Awake()
     {
@@ -35,6 +38,7 @@ public class ObjectPool : MonoBehaviour
         InitializeNewPool(bonePrefab);
         InitializeNewPool(golemPrefab);
         InitializeNewPool(damagePrefab);
+        InitializeNewPool(hitEffectPrefab);
     }
 
     private void InitializeNewPool(GameObject prefab)
@@ -73,6 +77,7 @@ public class ObjectPool : MonoBehaviour
     #region Return Pool
     private void ReturnPool(GameObject objectToReturn)
     {
+        Debug.Log("objectToReturn: " + objectToReturn);
         GameObject originalPool = objectToReturn.GetComponent<PooledObject>().prefab;
 
 

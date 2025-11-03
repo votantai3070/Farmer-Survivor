@@ -9,10 +9,13 @@ public class GameManager : MonoBehaviour, IGameManager
     [Header("UI Setting")]
     public static GameManager Instance;
     [SerializeField] private TextMeshProUGUI timeText;
+
+    #region Panel
     [SerializeField] private GameObject mainMenuPanel;
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject gameWinPanel;
     [SerializeField] private GameObject selectDiffPanel;
+    #endregion
 
     public float currentTime;
 
@@ -50,6 +53,11 @@ public class GameManager : MonoBehaviour, IGameManager
         if (gameWinPanel != null)
             gameWinPanel.SetActive(false);
 
+        SaveAndLoadDifficult();
+    }
+
+    private void SaveAndLoadDifficult()
+    {
         string diff = PlayerPrefs.GetString("Difficulty", "Easy");
 
         currentDifficultData = Resources.Load<DifficultData>($"Difficulties/{diff}");
@@ -63,7 +71,7 @@ public class GameManager : MonoBehaviour, IGameManager
             ShowTime(currentTime);
         }
 
-        if (currentTime <= 0) GameWin();
+        //if (currentTime <= 0) GameWin();
     }
 
     public void ShowTime(float timeToShow)
