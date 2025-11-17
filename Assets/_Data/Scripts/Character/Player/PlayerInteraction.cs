@@ -79,6 +79,8 @@ public class PlayerInteraction : MonoBehaviour
         expText.text = $"{_currentExp}/{_expToNextLevel}";
         levelText.text = $"Level {_currentLevel}";
         ShowSelectWeaponPanel();
+
+        SoundManager.instance.SetSoundState(SoundType.levelup);
     }
 
     private float GetExpToNextLevel()

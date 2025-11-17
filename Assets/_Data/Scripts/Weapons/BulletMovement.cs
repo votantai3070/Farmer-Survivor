@@ -115,6 +115,8 @@ public class BulletMovement : TakeDamaged
                 CreateNewEffect(hitEffectPrefab);
                 Attack(damagable);
             }
+            //SoundManager.instance.SetSoundState(SoundType.hit);
+
             ReturnToPool(gameObject);
             ReturnToPool(hitEffectPrefab);
         }
@@ -126,6 +128,8 @@ public class BulletMovement : TakeDamaged
                 CreateNewEffect(hitEffectPrefab);
                 Attack(damagable);
             }
+            SoundManager.instance.SetSoundState(SoundType.hit);
+
             ReturnToPool(gameObject);
             ReturnToPool(hitEffectPrefab);
         }

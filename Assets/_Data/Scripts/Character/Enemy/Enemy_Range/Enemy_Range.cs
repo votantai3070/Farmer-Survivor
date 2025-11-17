@@ -14,6 +14,7 @@ public class Enemy_Range : Enemy
     public MoveState_Range moveState { get; private set; }
     public AttackState_Range attackState { get; private set; }
     public DeadState_Range deadState { get; private set; }
+    public HitState_Range hitState { get; private set; }
 
 
     protected override void Awake()
@@ -24,7 +25,7 @@ public class Enemy_Range : Enemy
         moveState = new MoveState_Range(this, stateMachine, "Move");
         attackState = new AttackState_Range(this, stateMachine, "Attack");
         deadState = new DeadState_Range(this, stateMachine, "Dead");
-
+        hitState = new HitState_Range(this, stateMachine, "Hit");
 
         spriteRenderer = GetComponent<SpriteRenderer>();
     }

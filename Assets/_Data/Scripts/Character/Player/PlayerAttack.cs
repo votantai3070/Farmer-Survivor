@@ -46,10 +46,16 @@ public class PlayerAttack : MonoBehaviour
         if (weapon.type == WeaponType.Rifle
         || weapon.type == WeaponType.Pistol
         || weapon.type == WeaponType.Shotgun)
+        {
             bullet.Shot(1);
+            SoundManager.instance.SetSoundState(SoundType.range);
+        }
 
         else
+        {
             playerStamina.UseStamina(weapon.stamina);
+            SoundManager.instance.SetSoundState(SoundType.melee);
+        }
 
         HandleShooting(weapon);
     }

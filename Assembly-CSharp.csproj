@@ -71,6 +71,7 @@
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_AnimationEvents.cs" />
     <Compile Include="Assets\_Data\Scripts\UI\InventorySlot.cs" />
     <Compile Include="Assets\IsometricElfFreeVer\scripts\PlayerManager.cs" />
+    <Compile Include="Assets\_Data\Scripts\Managers\SoundManager.cs" />
     <Compile Include="Assets\_Data\Scripts\UI\DamagePopupAnimation.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightFlicker.cs" />
     <Compile Include="Assets\_Data\Scripts\Knockback.cs" />

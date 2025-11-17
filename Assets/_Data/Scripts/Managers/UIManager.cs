@@ -64,4 +64,6 @@ public class UIManager : MonoBehaviour
         ShowSettingsPanel();
         chooseDifficutyPanel.SetActive(false);
     }
+
+
 }

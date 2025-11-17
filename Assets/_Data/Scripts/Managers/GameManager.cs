@@ -94,6 +94,8 @@ public class GameManager : MonoBehaviour, IGameManager
     {
         Time.timeScale = 0f;
         gameOverPanel.SetActive(true);
+
+        SoundManager.instance.SetSoundState(SoundType.lose);
     }
 
     public void GameResume()
@@ -114,6 +116,8 @@ public class GameManager : MonoBehaviour, IGameManager
         GamePause();
         if (gameWinPanel != null)
             gameWinPanel.SetActive(true);
+
+        SoundManager.instance.SetSoundState(SoundType.win);
     }
 
     public void GameQuit()

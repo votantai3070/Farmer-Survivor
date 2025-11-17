@@ -24,6 +24,8 @@ public class MoveState_Range : CharacterState
     {
         base.Update();
 
+
+
         if (enemy.aIPath.reachedEndOfPath)
         {
             stateMachine.ChangeState(enemy.attackState);
