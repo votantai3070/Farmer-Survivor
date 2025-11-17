@@ -26,7 +26,7 @@ public class BulletMovement : TakeDamaged
     private void Start()
     {
         if (weaponData != null)
-            sr.sprite = GameManager.Instance.itemAtlas.GetSprite(weaponData.bulletSprite);
+            sr.sprite = GameManager.instance.itemAtlas.GetSprite(weaponData.bulletSprite);
     }
 
     private void Update()

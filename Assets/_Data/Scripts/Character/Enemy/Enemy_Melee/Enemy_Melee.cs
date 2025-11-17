@@ -13,6 +13,7 @@ public class Enemy_Melee : Enemy
     public MoveState_Melee moveState { get; private set; }
     public AttackState_Melee attackState { get; private set; }
     public DeadState_Melee deadState { get; private set; }
+    public HitState_Melee hitState { get; private set; }
 
     protected override void Awake()
     {
@@ -22,6 +23,7 @@ public class Enemy_Melee : Enemy
         moveState = new MoveState_Melee(this, stateMachine, "Move");
         attackState = new AttackState_Melee(this, stateMachine, "Attack");
         deadState = new DeadState_Melee(this, stateMachine, "Dead");
+        hitState = new HitState_Melee(this, stateMachine, "Hit");
 
         spriteRenderer = GetComponent<SpriteRenderer>();
         capsuleCollider = GetComponent<CapsuleCollider2D>();
@@ -31,7 +33,7 @@ public class Enemy_Melee : Enemy
     {
         stateMachine.Initialize(idleState);
 
-        Sprite sprite = GameManager.Instance.characterAtlas.GetSprite(spriteName);
+        Sprite sprite = GameManager.instance.characterAtlas.GetSprite(spriteName);
         spriteRenderer.sprite = sprite;
     }
 

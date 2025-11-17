@@ -13,7 +13,7 @@ public class InventorySlot : MonoBehaviour, IDropHandler
     private void Start()
     {
         if (image != null)
-            image.sprite = GameManager.Instance.UIAtlas.GetSprite("Panel");
+            image.sprite = GameManager.instance.UIAtlas.GetSprite("Panel");
     }
 
     public void OnDrop(PointerEventData eventData)

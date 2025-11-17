@@ -76,7 +76,11 @@ public class PlayerAttack : MonoBehaviour
     {
         controls = player.controls;
 
-        controls.Player.Fire.performed += ctx => HandlePlayerAttack(weapon);
+        controls.Player.Fire.performed += ctx =>
+        {
+            if (!GameManager.isPaused)
+                HandlePlayerAttack(weapon);
+        };
         controls.Player.Reload.performed += ctx =>
         {
             if (weapon.type != WeaponType.Throw)

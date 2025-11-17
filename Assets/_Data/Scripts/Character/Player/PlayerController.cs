@@ -12,7 +12,6 @@ public class PlayerController : Character
     [Header("Player Controller Setting")]
     public PlayerControls controls;
     public PlayerSettings settings;
-    public PlayerAnimation playerAnimation;
     [HideInInspector] public bool isAttacked = false;
 
     [Header("Speed")]
@@ -42,16 +41,6 @@ public class PlayerController : Character
         moveState = new MoveState_Player(this, stateMachine, "Move");
         deadState = new DeadState_Player(this, stateMachine, "Dead");
 
-
-        //SaveAndLoadCharacterData();
-    }
-
-    private void SaveAndLoadCharacterData()
-    {
-        string data = PlayerPrefs.GetString("Character", "Player Lv1");
-        characterData = Resources.Load<CharacterData>($"Upgrade/Player/{data}");
-
-        InitializeCharacterData(characterData);
     }
 
     private void Start()
@@ -60,7 +49,7 @@ public class PlayerController : Character
 
         stateMachine.Initialize(idleState);
 
-        Sprite sprite = GameManager.Instance.characterAtlas.GetSprite("Stand 0");
+        Sprite sprite = GameManager.instance.characterAtlas.GetSprite("Stand 0");
         spriteRenderer.sprite = sprite;
     }
 
@@ -84,6 +73,7 @@ public class PlayerController : Character
         settings.speed += boostAmount;
 
         GameObject newEffect = ObjectPool.instance.GetObject(speedEffectPrefab);
+        newEffect.transform.localPosition = Vector3.zero;
         newEffect.transform.SetParent(transform, false);
 
         yield return new WaitForSeconds(duration);
@@ -115,10 +105,8 @@ public class PlayerController : Character
     {
         controls.Enable();
     }
-
     private void OnDisable()
     {
         controls.Disable();
     }
-
 }

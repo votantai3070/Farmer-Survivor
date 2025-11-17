@@ -52,7 +52,7 @@ public class AvailableUpgrade : MonoBehaviour
                 btn.colors = cb;
 
                 chooseUpgrade.transform.GetChild(i).GetChild(0).GetComponent<Image>().sprite
-                    = GameManager.Instance.UIAtlas.GetSprite(availableSort[i].UISprite);
+                    = GameManager.instance.UIAtlas.GetSprite(availableSort[i].UISprite);
 
                 chooseUpgrade.transform.GetChild(i).GetChild(1).GetComponent<TextMeshProUGUI>().text
                     = $"{availableSort[i].weaponName} / Level {availableSort[i].level}";

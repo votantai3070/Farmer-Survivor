@@ -13,7 +13,7 @@ public class DeadState_Player : CharacterState
     {
         base.Enter();
 
-        GameManager.Instance.GameOver();
+        GameManager.instance.GameOver();
     }
 
     public override void Exit()

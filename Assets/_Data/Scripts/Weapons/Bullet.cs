@@ -23,7 +23,7 @@ public class Bullet : MonoBehaviour
 
         //weaponDatas.Find(w => w.weaponName == currentWeaponName).currentAmmo = currentAmmo;
 
-        UIManager.Instance.ammoText.text = $"{currentAmmo}/{reserveAmmo}";
+        UIManager.instance.ammoText.text = $"{currentAmmo}/{reserveAmmo}";
     }
 
     public void Reload()
@@ -45,7 +45,7 @@ public class Bullet : MonoBehaviour
         //weaponDatas.Find(w => w.weaponName == currentWeaponName).currentAmmo = currentAmmo;
         //weaponDatas.Find(w => w.weaponName == currentWeaponName).reserveAmmo = reserveAmmo;
 
-        UIManager.Instance.ammoText.text = $"{currentAmmo}/{reserveAmmo}";
+        UIManager.instance.ammoText.text = $"{currentAmmo}/{reserveAmmo}";
     }
 
     public void SetWeaponData(WeaponData weapon)

@@ -70,7 +70,7 @@ public class ObjectPool : MonoBehaviour
         GameObject objectToGet = poolDict[prefab].Dequeue();
 
         objectToGet.SetActive(true);
-        //objectToGet.transform.parent = null;
+        objectToGet.transform.parent = transform;
         return objectToGet;
     }
 
@@ -85,7 +85,7 @@ public class ObjectPool : MonoBehaviour
             InitializeNewPool(originalPool);
 
         objectToReturn.SetActive(false);
-        //objectToReturn.transform.parent = transform;
+        objectToReturn.transform.parent = transform;
 
         poolDict[originalPool].Enqueue(objectToReturn);
     }

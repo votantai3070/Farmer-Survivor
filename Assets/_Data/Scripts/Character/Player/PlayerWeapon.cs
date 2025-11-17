@@ -14,7 +14,7 @@ public class PlayerWeapon : MonoBehaviour
     private void Start()
     {
         if (spriteRenderer != null && hotBarManager.currentWeaponData != null)
-            spriteRenderer.sprite = GameManager.Instance.itemAtlas.GetSprite(hotBarManager.currentWeaponData.ingameSprite);
+            spriteRenderer.sprite = GameManager.instance.itemAtlas.GetSprite(hotBarManager.currentWeaponData.ingameSprite);
     }
 
     void Update()
@@ -33,7 +33,7 @@ public class PlayerWeapon : MonoBehaviour
 
         WeaponData weaponData = hotBarManager.currentWeaponData;
 
-        spriteRenderer.sprite = GameManager.Instance.itemAtlas.GetSprite(weaponData.ingameSprite);
+        spriteRenderer.sprite = GameManager.instance.itemAtlas.GetSprite(weaponData.ingameSprite);
     }
 
     void GetRotateWeaponFollowMouse()

@@ -59,7 +59,7 @@ public class Enemy : Character
         {
             gameObject.GetComponent<CircleCollider2D>().enabled = false;
         }
-        UIManager.Instance.UpdateDefeatEnemy(characterData.reward);
+        UIManager.instance.UpdateDefeatEnemy(characterData.reward);
 
         StartCoroutine(ReturnToPoolAfterDelay());
 

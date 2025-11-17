@@ -17,7 +17,7 @@ MonoBehaviour:
   phase2Time: 0.5
   phase3Time: 0.2
   phase4Time: 0
-  phase1EnemyCount: 1
+  phase1EnemyCount: 10
   phase2EnemyCount: 5
   phase3EnemyCount: 5
   phase4EnemyCount: 1

@@ -1,7 +1,6 @@
 using DG.Tweening;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.ShaderGraph;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -93,7 +92,7 @@ public class PlayerInteraction : MonoBehaviour
     private void ShowSelectWeaponPanel()
     {
         availableWeapon.SetWeaponAvailable();
-        GameManager.Instance.GamePause();
+        GameManager.instance.GamePause();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

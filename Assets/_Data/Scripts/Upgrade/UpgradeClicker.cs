@@ -33,7 +33,7 @@ public class UpgradeClicker : MonoBehaviour, IPointerClickHandler
         else
         {
             UpgradeWeapon();
-            GameManager.Instance.GameResume();
+            GameManager.instance.GameResume();
         }
     }
 

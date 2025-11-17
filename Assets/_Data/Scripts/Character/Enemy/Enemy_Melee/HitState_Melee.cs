@@ -1,16 +1,26 @@
 using UnityEngine;
 
-public class HitState_Melee : MonoBehaviour
+public class HitState_Melee : CharacterState
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private Enemy_Melee enemy;
+
+    public HitState_Melee(Character characterBase, StateMachine stateMachine, string animBoolName) : base(characterBase, stateMachine, animBoolName)
     {
-        
+        enemy = characterBase as Enemy_Melee;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void Enter()
     {
-        
+        base.Enter();
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+    }
+
+    public override void Update()
+    {
+        base.Update();
     }
 }

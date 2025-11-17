@@ -32,7 +32,7 @@ public class Enemy_Range : Enemy
     protected override void Start()
     {
         base.Start();
-        Sprite sprite = GameManager.Instance.characterAtlas.GetSprite(spriteName);
+        Sprite sprite = GameManager.instance.characterAtlas.GetSprite(spriteName);
         spriteRenderer.sprite = sprite;
 
 

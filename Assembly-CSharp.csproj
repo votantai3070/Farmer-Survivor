@@ -61,7 +61,6 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.58f2\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\_Data\Scripts\InventoryManager.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\SpawnEnemy.cs" />
     <Compile Include="Assets\_Data\Scripts\UI\ChooseDifficulty.cs" />
     <Compile Include="Assets\_Data\Scripts\Items\ChestController.cs" />
@@ -92,9 +91,9 @@
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Range\HitState_Range.cs" />
     <Compile Include="Assets\_Data\Scripts\Weapons\BulletMovement.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDir.cs" />
-    <Compile Include="Assets\_Data\Scripts\UIManager.cs" />
     <Compile Include="Assets\IsometricElfFreeVer\scripts\StoneManager.cs" />
     <Compile Include="Assets\_Data\Scripts\ScriptableObjects\WeaponData.cs" />
+    <Compile Include="Assets\_Data\Scripts\Managers\SettingsManager.cs" />
     <Compile Include="Assets\_Data\Scripts\Items\ExpController.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Player\PlayerStamina.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Player\PlayerAttack.cs" />
@@ -102,18 +101,17 @@
     <Compile Include="Assets\_Data\Scripts\Character\Player\MoveState_Player.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RotateCamera.cs" />
     <Compile Include="Assets\_Data\Scripts\Interface\IGameManager.cs" />
-    <Compile Include="Assets\_Data\Scripts\GameManager.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Player\PlayerGhostDestroy.cs" />
     <Compile Include="Assets\_Data\Scripts\ScriptableObjects\CharacterData.cs" />
     <Compile Include="Assets\_Data\Scripts\Upgrade\AvailableUpgrade.cs" />
     <Compile Include="Assets\_Data\Scripts\ScriptableObjects\ItemData.cs" />
     <Compile Include="Assets\_Data\Scripts\Interface\IDamagable.cs" />
+    <Compile Include="Assets\_Data\Scripts\Managers\HotBarManager.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Melee\IdleState_Melee.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Player\IdleState_Player.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Melee\MoveState_Melee.cs" />
-    <Compile Include="Assets\Enemy Galore 1 - Pixel Art\Script\EnemyTest.cs" />
     <Compile Include="Assets\IsometricElfFreeVer\scripts\ShotController.cs" />
     <Compile Include="Assets\_Data\Scripts\UI\ChunkTilemapGenerator.cs" />
     <Compile Include="Assets\_Data\Scripts\Weapons\Weapon.cs" />
@@ -130,16 +128,17 @@
     <Compile Include="Assets\_Data\Scripts\ScriptableObjects\DifficultData.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Character.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Range\AttackState_Range.cs" />
-    <Compile Include="Assets\Enemy Galore 1 - Pixel Art\Script\EnemySelector.cs" />
     <Compile Include="Assets\_Data\Scripts\Items\Item.cs" />
+    <Compile Include="Assets\_Data\Scripts\Managers\GameManager.cs" />
+    <Compile Include="Assets\_Data\Scripts\Managers\UIManager.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Melee\AttackState_Melee.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Melee\Enemy_MeleeAttack.cs" />
     <Compile Include="Assets\_Data\Scripts\UI\Title.cs" />
-    <Compile Include="Assets\_Data\Scripts\HotBarManager.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Melee\DeadState_Melee.cs" />
     <Compile Include="Assets\_Data\Scripts\Items\SpeedItemController.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightIntensityFade.cs" />
     <Compile Include="Assets\_Data\Scripts\Weapons\StoneDestroy.cs" />
+    <Compile Include="Assets\_Data\Scripts\Managers\InventoryManager.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_New.cs" />
     <Compile Include="Assets\_Data\Scripts\Menu\ChooseUpgradeCharacter.cs" />
     <Compile Include="Assets\_Data\Scripts\UI\EnvironmentEffect.cs" />
@@ -171,7 +170,6 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\IsometricElfFreeVer\Readme_en.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Enemy Galore 1 - Pixel Art\Read Me.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />

@@ -45,10 +45,10 @@ public class SpawnEnemy : MonoBehaviour
     IEnumerator Wait()
     {
         yield return null;
-        if (GameManager.Instance.currentDifficultData != null)
+        if (GameManager.instance.currentDifficultData != null)
         {
-            SetDifficulty(GameManager.Instance.currentDifficultData);
-            GameManager.Instance.currentTime = startTime;
+            SetDifficulty(GameManager.instance.currentDifficultData);
+            GameManager.instance.currentTime = startTime;
         }
         else
         {
@@ -61,7 +61,7 @@ public class SpawnEnemy : MonoBehaviour
         //Debug.Log("maxEnemies: " + maxEnemies);
         //Debug.Log("activeEnemies Count: " + activeEnemies.Count);
 
-        GameManager.Instance.ShowTime(startTime);
+        GameManager.instance.ShowTime(startTime);
     }
 
     void HandleSpawnEnemy()
@@ -75,7 +75,7 @@ public class SpawnEnemy : MonoBehaviour
 
         if (activeEnemies.Count >= maxEnemies) return;
 
-        float currentTime = GameManager.Instance.currentTime;
+        float currentTime = GameManager.instance.currentTime;
 
         float phase1Start = startTime * phase1Time;
         float phase2Start = startTime * phase2Time;

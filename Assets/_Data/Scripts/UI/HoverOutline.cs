@@ -15,7 +15,7 @@ public class HoverOutline : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     private void Start()
     {
         if (image != null)
-            image.sprite = GameManager.Instance.UIAtlas.GetSprite("Panel");
+            image.sprite = GameManager.instance.UIAtlas.GetSprite("Panel");
     }
     public void OnPointerEnter(PointerEventData eventData)
     {

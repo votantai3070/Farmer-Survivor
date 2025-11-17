@@ -15,10 +15,10 @@ public class ChooseDifficulty : MonoBehaviour
             return;
         }
 
-        GameManager.Instance.currentDifficultData = difficult;
+        GameManager.instance.currentDifficultData = difficult;
         PlayerPrefs.SetString("Difficulty", diff);
         PlayerPrefs.Save();
-        GameManager.Instance.PlayGame();
+        GameManager.instance.PlayGame();
     }
 
     public void ChooseEz() => ChooseDifficult("Easy");

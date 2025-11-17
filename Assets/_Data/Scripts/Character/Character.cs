@@ -1,34 +1,43 @@
 using DG.Tweening;
 using TMPro;
-using UnityEditor.U2D.Animation;
 using UnityEngine;
 using UnityEngine.UI;
 using static CharacterData;
 
 public class Character : MonoBehaviour, IDamagable
 {
-    [Header("Character Setting")]
+    [Header("Character Elements")]
     public CharacterData characterData;
     public Slider charhealthSlider;
     public TextMeshProUGUI playerHpText;
     protected SpriteRenderer spriteRenderer;
-
-    public StateMachine stateMachine { get; private set; }
-
-
     private Tweener hpTween;
-
-    public Animator anim { get; private set; }
     public float CurrentHealth { get; private set; }
     float MaxHealth => characterData.maxHealth;
+
+    [Header("State")]
+    public StateMachine stateMachine { get; private set; }
+    public Animator anim { get; private set; }
+
 
     protected virtual void Awake()
     {
         stateMachine = new StateMachine();
         anim = GetComponent<Animator>();
 
+        if (characterData.characterType == CharacterType.Player)
+            SaveAndLoadCharacterData();
+
         if (characterData != null && characterData.characterType == CharacterType.Player)
             InitializePlayer();
+    }
+
+    private void SaveAndLoadCharacterData()
+    {
+        string data = PlayerPrefs.GetString("Character", "Player Lv1");
+        characterData = Resources.Load<CharacterData>($"Upgrade/Player/{data}");
+
+        InitializeCharacterData(characterData);
     }
 
     private void InitializePlayer()
@@ -43,8 +52,6 @@ public class Character : MonoBehaviour, IDamagable
 
         if (playerHpText != null)
             playerHpText.text = $"{CurrentHealth}/{MaxHealth}";
-
-
     }
 
     private void OnEnable()

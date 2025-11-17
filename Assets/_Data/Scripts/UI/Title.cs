@@ -14,6 +14,6 @@ public class Title : MonoBehaviour
 
     private void Start()
     {
-        image.sprite = GameManager.Instance.UIAtlas.GetSprite(titleSpriteName);
+        image.sprite = GameManager.instance.UIAtlas.GetSprite(titleSpriteName);
     }
 }

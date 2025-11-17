@@ -12,6 +12,6 @@ public class Item : MonoBehaviour
 
     protected virtual void Start()
     {
-        spriteRenderer.sprite = GameManager.Instance.itemAtlas.GetSprite(itemData.itemName);
+        spriteRenderer.sprite = GameManager.instance.itemAtlas.GetSprite(itemData.itemName);
     }
 }

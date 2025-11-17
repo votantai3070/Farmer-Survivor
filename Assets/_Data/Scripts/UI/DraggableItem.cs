@@ -37,6 +37,6 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public void SetItem(WeaponData weapon)
     {
         weaponData = weapon;
-        image.sprite = GameManager.Instance.UIAtlas.GetSprite(weapon.UISprite);
+        image.sprite = GameManager.instance.UIAtlas.GetSprite(weapon.UISprite);
     }
 }

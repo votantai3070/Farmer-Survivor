@@ -21,8 +21,8 @@ public class ChestController : MonoBehaviour
 
     private void Start()
     {
-        closedChestSprite = GameManager.Instance.UIAtlas.GetSprite("Box 0");
-        openedChestSprite = GameManager.Instance.UIAtlas.GetSprite("Box 1");
+        closedChestSprite = GameManager.instance.UIAtlas.GetSprite("Box 0");
+        openedChestSprite = GameManager.instance.UIAtlas.GetSprite("Box 1");
         sr.sprite = closedChestSprite;
     }
 
