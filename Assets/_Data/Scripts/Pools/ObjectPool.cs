@@ -78,7 +78,8 @@ public class ObjectPool : MonoBehaviour
     private void ReturnPool(GameObject objectToReturn)
     {
         Debug.Log("objectToReturn: " + objectToReturn);
-        GameObject originalPool = objectToReturn.GetComponent<PooledObject>().prefab;
+
+        GameObject originalPool = objectToReturn?.GetComponent<PooledObject>().prefab;
 
 
         if (!poolDict.ContainsKey(originalPool))

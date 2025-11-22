@@ -82,9 +82,11 @@
     <Compile Include="Assets\IsometricElfFreeVer\scripts\PotionManager.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Player\PlayerInteraction.cs" />
     <Compile Include="Assets\_Data\Scripts\Pools\ObjectPool.cs" />
+    <Compile Include="Assets\_Data\Scripts\Skill\BladeVortex.cs" />
     <Compile Include="Assets\_Data\Scripts\Items\PotionController.cs" />
     <Compile Include="Assets\IsometricElfFreeVer\scripts\ArrowManager.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy.cs" />
+    <Compile Include="Assets\_Data\Scripts\Skill\BoomerangBlade.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Player\Attack.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\CharacterState.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Player\PlayerWeapon.cs" />
@@ -102,12 +104,14 @@
     <Compile Include="Assets\_Data\Scripts\Character\Player\MoveState_Player.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RotateCamera.cs" />
     <Compile Include="Assets\_Data\Scripts\Interface\IGameManager.cs" />
+    <Compile Include="Assets\_Data\Scripts\Managers\SkillManager.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Player\PlayerGhostDestroy.cs" />
     <Compile Include="Assets\_Data\Scripts\ScriptableObjects\CharacterData.cs" />
     <Compile Include="Assets\_Data\Scripts\Upgrade\AvailableUpgrade.cs" />
     <Compile Include="Assets\_Data\Scripts\ScriptableObjects\ItemData.cs" />
     <Compile Include="Assets\_Data\Scripts\Interface\IDamagable.cs" />
     <Compile Include="Assets\_Data\Scripts\Managers\HotBarManager.cs" />
+    <Compile Include="Assets\_Data\Scripts\Skill\ShadowBlade.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Melee\IdleState_Melee.cs" />
@@ -118,6 +122,7 @@
     <Compile Include="Assets\_Data\Scripts\Weapons\Weapon.cs" />
     <Compile Include="Assets\_Data\Scripts\InputManager\InputManager.cs" />
     <Compile Include="Assets\TopDown 2D RPG BE3\ReadMe\Scripts\ReadmeBE3.cs" />
+    <Compile Include="Assets\_Data\Scripts\Skill\AutoShoot.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Range\IdleState_Range.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Player\DeadState_Player.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Player\PlayerAnimation.cs" />
@@ -146,9 +151,11 @@
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Melee\Enemy_Melee.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Player\AttackAMS.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Range\DeadState_Range.cs" />
+    <Compile Include="Assets\_Data\Scripts\Skill\SwordRain.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Range\MoveState_Range.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Player\PlayerController.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Player\PlayerDash.cs" />
+    <Compile Include="Assets\_Data\Scripts\Skill\Skill.cs" />
     <Compile Include="Assets\_Data\Scripts\Items\MagnetController.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Range\Enemy_Range.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoDestructShuriken.cs" />
