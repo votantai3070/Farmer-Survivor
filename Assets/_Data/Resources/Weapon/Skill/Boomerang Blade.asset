@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12210993afed5934095a1666226f3805, type: 3}
+  m_Name: Boomerang Blade
+  m_EditorClassIdentifier: 
+  skillName: Boomerang Blade
+  iconLv1_2: {fileID: 0}
+  iconLv3: {fileID: 0}
+  descriptionLv1: 'Throw 1 returning sword.
+
+    Damage: 100 (out) + 100 (back)
+    = 200 total
+
+    Range: 8m
+
+    Cooldown: 4s
+
+    Hits twice per throw.'
+  descriptionLv2: "Throw 2 returning swords.\r\nDamage: 120 \xD7 2 per sword = 240
+    per sword\r\nRange: 10m\r\nCooldown: 3.8s\r\nDouble the returning blades."
+  descriptionLv3: "Throw 3 returning swords.\r\nDamage: 140 \xD7 2 per sword = 280
+    per sword\r\nRange: 12m\r\nBounce: Up to 3 targets per sword\r\nCooldown: 3.5s\r\nMaster
+    of the boomerang technique."

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12210993afed5934095a1666226f3805, type: 3}
+  m_Name: Flying Sword
+  m_EditorClassIdentifier: 
+  skillName: Flying Sword
+  iconLv1_2: {fileID: -728199165941334140, guid: 6d7e7c5afbaf51546a0dd6e6bfd0ee8d, type: 3}
+  iconLv3: {fileID: -6034565895442485441, guid: 02da844fbb9c12a41b350d3be7ef4895, type: 3}
+  descriptionLv1: 'Launch 1 sword projectile forward.
+
+    Damage: 100
+
+    Range:
+    10m
+
+    Cooldown: 3s
+
+    Basic but reliable ranged attack.'
+  descriptionLv2: 'Launch 1 sword projectile forward.
+
+    Damage: 130
+
+    Range:
+    12m
+
+    Cooldown: 2.8s
+
+    Pierces through first enemy.'
+  descriptionLv3: 'Launch 3 swords in a fan pattern.
+
+    Damage: 150 per sword
+
+    Range:
+    15m
+
+    Cooldown: 2.5s
+
+    Covers a wide area with devastating power.'

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12210993afed5934095a1666226f3805, type: 3}
+  m_Name: Sword Rain
+  m_EditorClassIdentifier: 
+  skillName: Sword Rain
+  iconLv1_2: {fileID: 0}
+  iconLv3: {fileID: 0}
+  descriptionLv1: 'Rain 5 swords from the sky.
+
+    Damage: 120 per sword
+
+    Area:
+    3m radius
+
+    Cooldown: 8s
+
+    Call down divine judgment.'
+  descriptionLv2: 'Rain 7 swords from the sky.
+
+    Damage: 150 per sword
+
+    Area:
+    4m radius
+
+    Cooldown: 7.5s
+
+    Increased coverage and power.'
+  descriptionLv3: 'Unleash a storm of 12 swords.
+
+    Damage: 180 per sword
+
+    Area:
+    5m radius
+
+    Slow: 30% for 3s
+
+    Cooldown: 7s
+
+    Devastate entire groups
+    of enemies.'
