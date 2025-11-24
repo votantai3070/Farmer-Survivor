@@ -4,16 +4,17 @@ using UnityEngine;
 public enum SkillType
 {
     BladeVortex,
-    AutoShoot,
+    FlyingSword,
     SwordRain,
     BoomerangSword,
+    ShadowBlade
 }
 
 public class SkillManager : MonoBehaviour
 {
     public static SkillManager Instance;
 
-    public static Action<SkillType> onChangeSkillType;
+    public static Action<SkillType, WeaponData> onChangeSkillType;
 
     public Skill[] skills;
 
@@ -40,13 +41,34 @@ public class SkillManager : MonoBehaviour
         onChangeSkillType -= HandleChangeSkillType;
     }
 
-    private void HandleChangeSkillType(SkillType skillType)
+    private void HandleChangeSkillType(SkillType skillType, WeaponData weapon)
     {
+        //Debug.Log("Changing skill to: " + skillType.ToString());
+        //Debug.Log("With skill: " + weapon.weaponName);
+        //Debug.Log("Skills level: " + weapon.level);
 
-        foreach (var skill in skills)
+        switch (skillType)
         {
-            if (skill.skillType == skillType)
-                skill.gameObject.SetActive(true);
+            case SkillType.BladeVortex:
+                skills[0].gameObject.SetActive(true);
+                skills[0].GetComponent<BladeVortex>()?.UpgradeWeaponData(weapon);
+                break;
+            case SkillType.FlyingSword:
+                skills[1].gameObject.SetActive(true);
+                break;
+            case SkillType.SwordRain:
+                skills[2].gameObject.SetActive(true);
+                break;
+            case SkillType.BoomerangSword:
+                skills[3].gameObject.SetActive(true);
+                break;
+            case SkillType.ShadowBlade:
+                skills[4].gameObject.SetActive(true);
+                break;
+            default:
+                break;
         }
     }
+
+
 }

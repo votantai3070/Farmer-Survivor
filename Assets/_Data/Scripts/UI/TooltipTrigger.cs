@@ -7,7 +7,7 @@ public class SkillTooltipTrigger : MonoBehaviour, IPointerEnterHandler, IPointer
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        SkillData skillData = GetComponent<SkillDataHolder>()?.skillData;
+        SkillData skillData = GetComponent<SkillHolder>()?.SkillData;
 
         if (skillData != null)
         {

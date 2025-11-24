@@ -6,14 +6,18 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
 
+    public PlayerControls controls;
+    private PlayerController player;
+
     public TextMeshProUGUI ammoText;
 
     [SerializeField] GameObject defeatEnemy;
-    int currentAmount = 0;
+    int currentAmount;
 
     #region Panel
     [SerializeField] private GameObject settingsPanel;
     [SerializeField] private GameObject chooseDifficutyPanel;
+    [SerializeField] private GameObject skillTreePanel;
     #endregion
 
     private void Awake()
@@ -24,18 +28,36 @@ public class UIManager : MonoBehaviour
             return;
         }
         instance = this;
+
+        player = FindAnyObjectByType<PlayerController>();
     }
 
 
     private void Start()
     {
+        currentAmount = 500;
+        var text = defeatEnemy.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+        text.text = currentAmount.ToString();
+
         ammoText.enabled = false;
         defeatEnemy.transform.GetChild(0).GetComponent<Image>().sprite = GameManager.instance.UIAtlas.GetSprite("Icon 0");
+    }
+
+    private void Update()
+    {
+        AssignInputEvents();
     }
 
     public void UpdateDefeatEnemy(int amount)
     {
         currentAmount += amount;
+        var text = defeatEnemy.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+        text.text = currentAmount.ToString();
+    }
+
+    public void MinusDefeatEnemy(int amount)
+    {
+        currentAmount -= amount;
         var text = defeatEnemy.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
         text.text = currentAmount.ToString();
     }
@@ -65,5 +87,33 @@ public class UIManager : MonoBehaviour
         chooseDifficutyPanel.SetActive(false);
     }
 
+    public int GetCurrentDefeatEnemy() => currentAmount;
 
+    public void ShowSkillTreePanel()
+    {
+        skillTreePanel.SetActive(true);
+        GameManager.instance.GamePause();
+    }
+
+    public void HideSkillTreePanel()
+    {
+        skillTreePanel.SetActive(false);
+        GameManager.instance.GameResume();
+    }
+
+    private void AssignInputEvents()
+    {
+        controls = player.controls;
+
+        controls.UI.Skill.performed += ctx =>
+        {
+            if (skillTreePanel.activeSelf)
+            {
+                HideSkillTreePanel();
+            }
+            else
+                ShowSkillTreePanel();
+        };
+
+    }
 }

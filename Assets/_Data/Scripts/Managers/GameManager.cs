@@ -34,6 +34,10 @@ public class GameManager : MonoBehaviour, IGameManager
         {
             instance = this;
         }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
 
         var systems = FindObjectsByType<EventSystem>(FindObjectsSortMode.None);
         if (systems.Length > 1)

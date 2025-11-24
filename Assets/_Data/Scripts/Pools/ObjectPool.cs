@@ -59,7 +59,7 @@ public class ObjectPool : MonoBehaviour
         poolDict[prefab].Enqueue(obj);
     }
 
-    public GameObject GetObject(GameObject prefab)
+    public GameObject GetObject(GameObject prefab, Transform transform = null)
     {
         if (!poolDict.ContainsKey(prefab))
             InitializeNewPool(prefab);
@@ -70,7 +70,7 @@ public class ObjectPool : MonoBehaviour
         GameObject objectToGet = poolDict[prefab].Dequeue();
 
         objectToGet.SetActive(true);
-        //objectToGet.transform.parent = transform;
+        objectToGet.transform.parent = transform;
         return objectToGet;
     }
 
@@ -86,7 +86,7 @@ public class ObjectPool : MonoBehaviour
             InitializeNewPool(originalPool);
 
         objectToReturn.SetActive(false);
-        //objectToReturn.transform.parent = transform;
+        objectToReturn.transform.parent = transform;
 
         poolDict[originalPool].Enqueue(objectToReturn);
     }

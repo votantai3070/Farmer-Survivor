@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class SwordRain : MonoBehaviour
+public class SwordRain : Skill
 {
     public Transform player;
     public GameObject swordPrefab;

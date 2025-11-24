@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class AutoShoot : MonoBehaviour
+public class FlyingSword : Skill
 {
     [Header("Settings")]
     public Transform player;
@@ -76,10 +76,11 @@ public class AutoShoot : MonoBehaviour
 
         // Cho đạn bay
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        WeaponData bulletSpeed = bullet.GetComponent<CloseWeaponMovement>().weaponData;
+
+        bullet.GetComponent<TakeDamaged>().SetWeaponData(weaponData);
         if (rb != null)
         {
-            rb.linearVelocity = direction * bulletSpeed.bulletSpeed;
+            rb.linearVelocity = direction * weaponData.bulletSpeed;
         }
 
         ObjectPool.instance.DelayReturnToPool(bullet, 3f);
@@ -97,4 +98,8 @@ public class AutoShoot : MonoBehaviour
         fireRate = Mathf.Max(0.1f, fireRate - 0.1f);
     }
 
+    public void UpgradeWeaponData(WeaponData weapon)
+    {
+        weaponData = weapon;
+    }
 }

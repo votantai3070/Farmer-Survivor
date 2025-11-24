@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class BoomerangBlade : MonoBehaviour
+public class BoomerangBlade : Skill
 {
     [SerializeField] Transform player;
     [SerializeField] GameObject swordPrefab;

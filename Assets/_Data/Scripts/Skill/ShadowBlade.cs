@@ -1,8 +1,7 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ShadowBlade : MonoBehaviour
+public class ShadowBlade : Skill
 {
     [SerializeField] Transform player;
     [SerializeField] GameObject swordPrefab;

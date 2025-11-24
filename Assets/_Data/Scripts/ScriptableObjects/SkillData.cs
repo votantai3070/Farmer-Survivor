@@ -10,6 +10,11 @@ public class SkillData : ScriptableObject
     public Sprite iconLv1_2;
     public Sprite iconLv3;
 
+    [Header("Skill Point")]
+    public int skillPointLv1;
+    public int skillPointLv2;
+    public int skillPointLv3;
+
     [Header("Level 1 Description")]
     [TextArea(5, 8)]
     public string descriptionLv1;
@@ -37,4 +42,6 @@ public class SkillData : ScriptableObject
     {
         return level >= 3 ? iconLv3 : iconLv1_2;
     }
+
+
 }

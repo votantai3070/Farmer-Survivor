@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8365278813474576558}
   - component: {fileID: 294056799615927450}
   - component: {fileID: -2258101756891035072}
-  - component: {fileID: 8420552691342839206}
+  - component: {fileID: 3588133237599582469}
   m_Layer: 0
   m_Name: Visual_Weapon_Sword
   m_TagString: Untagged
@@ -135,7 +135,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.2, y: 0.65}
   m_EdgeRadius: 0
---- !u!114 &8420552691342839206
+--- !u!114 &3588133237599582469
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2534243422503077503}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a97a83388890304080d3411d89974f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 38cde77d5bb5a3644873bea2f6a6c160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   weaponData: {fileID: 11400000, guid: e336f8285e008de43a4560b8d69bd095, type: 2}

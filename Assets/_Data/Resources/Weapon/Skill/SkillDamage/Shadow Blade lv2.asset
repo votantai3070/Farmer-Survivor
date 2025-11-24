@@ -10,29 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a4a412648f2175439ceb41a8d684b00, type: 3}
-  m_Name: BladeVortex
+  m_Name: Shadow Blade lv2
   m_EditorClassIdentifier: 
-  weaponName: Blade Vortex
-  level: 1
+  weaponName: Shadow Blade
+  level: 2
   description: 
   weaponType: 0
-  ingameSprite: evo_bundle1
+  rareColor: {r: 1, g: 1, b: 1, a: 1}
+  ingameSprite: 
   bulletSprite: 
   UISprite: 
-  firstDamage: 2
-  lastDamage: 3
-  range: 0
-  bulletSpeed: 0
+  firstDamage: 4
+  lastDamage: 6
   criticalChange: 0.2
   criticalDamage: 2
-  stamina: 0
-  magazineSize: 0
-  bulletShotSize: 0
-  fireRate: 0
-  baseSpreadAngle: 0
+  range: 50
+  bulletSpeed: 8
+  magazineSize: 30
+  bulletShotSize: 3
   currentAmmo: 0
   reserveAmmo: 0
-  attackDelayTime: 0
-  reloadTime: 0
-  isAutomatic: 0
-  rareColor: {r: 0, g: 0, b: 0, a: 0}
+  fireRate: 10
+  attackDelayTime: 0.1
+  reloadTime: 2
+  isAutomatic: 1
+  baseSpreadAngle: 2
+  stamina: 1
+  averageDamage: 5
+  DPS: 50

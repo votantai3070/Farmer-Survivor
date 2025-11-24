@@ -10,31 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a4a412648f2175439ceb41a8d684b00, type: 3}
-  m_Name: Arrow
+  m_Name: BladeVortex lv3
   m_EditorClassIdentifier: 
-  weaponName: Bow
-  level: 1
+  weaponName: Blade Vortex
+  level: 3
   description: 
   weaponType: 4
   rareColor: {r: 0, g: 0, b: 0, a: 0}
-  ingameSprite: 
+  ingameSprite: evo_bundle1
   bulletSprite: 
   UISprite: 
-  firstDamage: 0
-  lastDamage: 0
-  criticalChange: 0
-  criticalDamage: 1
-  range: 0
-  bulletSpeed: 100
+  firstDamage: 4
+  lastDamage: 5
+  criticalChange: 0.2
+  criticalDamage: 2
+  range: 2
+  bulletSpeed: 150
   magazineSize: 0
-  bulletShotSize: 1
-  currentAmmo: 0
+  bulletShotSize: 10
+  currentAmmo: 10
   reserveAmmo: 0
-  fireRate: 10
+  fireRate: 0
   attackDelayTime: 0
   reloadTime: 0
   isAutomatic: 0
-  baseSpreadAngle: 2
+  baseSpreadAngle: 0
   stamina: 0
-  averageDamage: 0
+  averageDamage: 4.5
   DPS: 0

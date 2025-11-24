@@ -13,23 +13,28 @@ MonoBehaviour:
   m_Name: Stone
   m_EditorClassIdentifier: 
   weaponName: Stone
-  level: 0
+  level: 1
   description: 
   weaponType: 0
+  rareColor: {r: 0, g: 0, b: 0, a: 0}
   ingameSprite: 
   bulletSprite: item_0
   UISprite: 
   firstDamage: 1
   lastDamage: 2
+  criticalChange: 0
+  criticalDamage: 1
   range: 0
   bulletSpeed: 5
-  criticalChange: 0
-  criticalDamage: 0
-  stamina: 0
   magazineSize: 0
+  bulletShotSize: 1
   currentAmmo: 0
   reserveAmmo: 0
+  fireRate: 10
   attackDelayTime: 0
   reloadTime: 0
   isAutomatic: 0
-  rareColor: {r: 0, g: 0, b: 0, a: 0}
+  baseSpreadAngle: 2
+  stamina: 0
+  averageDamage: 1.5
+  DPS: 15

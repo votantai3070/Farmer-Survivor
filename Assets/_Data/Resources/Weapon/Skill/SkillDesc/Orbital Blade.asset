@@ -15,6 +15,9 @@ MonoBehaviour:
   skillName: Orbital Blade
   iconLv1_2: {fileID: 0}
   iconLv3: {fileID: 0}
+  skillPointLv1: 0
+  skillPointLv2: 100
+  skillPointLv3: 150
   descriptionLv1: '2 swords orbit around you.
 
     Damage: 40/sec on contact

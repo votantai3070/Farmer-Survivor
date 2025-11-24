@@ -10,31 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a4a412648f2175439ceb41a8d684b00, type: 3}
-  m_Name: Arrow
+  m_Name: BoomerangSword lv1
   m_EditorClassIdentifier: 
-  weaponName: Bow
+  weaponName: BoomerangSword
   level: 1
   description: 
-  weaponType: 4
-  rareColor: {r: 0, g: 0, b: 0, a: 0}
+  weaponType: 0
+  rareColor: {r: 1, g: 1, b: 1, a: 1}
   ingameSprite: 
   bulletSprite: 
   UISprite: 
-  firstDamage: 0
-  lastDamage: 0
-  criticalChange: 0
-  criticalDamage: 1
-  range: 0
-  bulletSpeed: 100
-  magazineSize: 0
+  firstDamage: 3
+  lastDamage: 4
+  criticalChange: 0.2
+  criticalDamage: 2
+  range: 5
+  bulletSpeed: 5
+  magazineSize: 30
   bulletShotSize: 1
   currentAmmo: 0
   reserveAmmo: 0
   fireRate: 10
-  attackDelayTime: 0
-  reloadTime: 0
-  isAutomatic: 0
+  attackDelayTime: 0.1
+  reloadTime: 2
+  isAutomatic: 1
   baseSpreadAngle: 2
-  stamina: 0
-  averageDamage: 0
-  DPS: 0
+  stamina: 1
+  averageDamage: 3.5
+  DPS: 35
