@@ -30,7 +30,6 @@ public class BladeVortex : Skill
             RotateSwords();
         }
     }
-
     void CreateSwords(int count)
     {
         if (isCreatingSwords) return;
@@ -128,13 +127,14 @@ public class BladeVortex : Skill
         }
     }
 
-    public void UpgradeWeaponData(WeaponData weapon)
+    public override void UpgradeWeaponData(WeaponData weapon)
     {
-        if (weapon == null || weapon.level > maxLevel) return;
+
 
         Debug.Log($"=== UPGRADE: {swordCount} -> {weapon.bulletShotSize} swords ===");
 
-        weaponData = weapon;
+        base.UpgradeWeaponData(weapon);
+
         radius = weaponData.range;
         rotationSpeed = weaponData.bulletSpeed;
 

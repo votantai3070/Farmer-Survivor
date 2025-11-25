@@ -2,8 +2,6 @@
 
 public class CloseWeaponMovement : TakeDamaged
 {
-    [SerializeField] float detectionRadius = 0.5f;
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
@@ -13,11 +11,5 @@ public class CloseWeaponMovement : TakeDamaged
 
             ObjectPool.instance.DelayReturnToPool(gameObject);
         }
-    }
-
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireSphere(transform.position, detectionRadius);
     }
 }

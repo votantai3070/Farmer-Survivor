@@ -33,15 +33,15 @@ public class SkillManager : MonoBehaviour
 
     private void Start()
     {
-        onChangeSkillType += HandleChangeSkillType;
+        onChangeSkillType += HandleChangeSkill;
     }
 
     private void OnDestroy()
     {
-        onChangeSkillType -= HandleChangeSkillType;
+        onChangeSkillType -= HandleChangeSkill;
     }
 
-    private void HandleChangeSkillType(SkillType skillType, WeaponData weapon)
+    private void HandleChangeSkill(SkillType skillType, WeaponData weapon)
     {
         //Debug.Log("Changing skill to: " + skillType.ToString());
         //Debug.Log("With skill: " + weapon.weaponName);
@@ -55,20 +55,23 @@ public class SkillManager : MonoBehaviour
                 break;
             case SkillType.FlyingSword:
                 skills[1].gameObject.SetActive(true);
+                skills[1].GetComponent<FlyingSword>()?.UpgradeWeaponData(weapon);
                 break;
             case SkillType.SwordRain:
                 skills[2].gameObject.SetActive(true);
+                skills[2].GetComponent<SwordRain>()?.UpgradeWeaponData(weapon);
                 break;
             case SkillType.BoomerangSword:
                 skills[3].gameObject.SetActive(true);
+                skills[3].GetComponent<BoomerangBlade>()?.UpgradeWeaponData(weapon);
                 break;
             case SkillType.ShadowBlade:
                 skills[4].gameObject.SetActive(true);
+                skills[4].GetComponent<ShadowBlade>()?.UpgradeWeaponData(weapon);
+
                 break;
             default:
                 break;
         }
     }
-
-
 }

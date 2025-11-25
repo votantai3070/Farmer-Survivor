@@ -77,10 +77,10 @@ public class FlyingSword : Skill
         // Cho đạn bay
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
 
-        bullet.GetComponent<TakeDamaged>().SetWeaponData(weaponData);
+        bullet.GetComponent<CloseWeaponMovement>().SetWeaponData(weaponData);
         if (rb != null)
         {
-            rb.linearVelocity = direction * weaponData.bulletSpeed;
+            rb.linearVelocity = direction * bulletSpeed;
         }
 
         ObjectPool.instance.DelayReturnToPool(bullet, 3f);
@@ -98,8 +98,13 @@ public class FlyingSword : Skill
         fireRate = Mathf.Max(0.1f, fireRate - 0.1f);
     }
 
-    public void UpgradeWeaponData(WeaponData weapon)
+    public override void UpgradeWeaponData(WeaponData weapon)
     {
-        weaponData = weapon;
+        base.UpgradeWeaponData(weapon);
+
+        detectionRadius = weapon.range;
+        bulletCount = weapon.bulletShotSize;
+        bulletSpeed = weapon.bulletSpeed;
+        fireRate = 1f / weapon.fireRate;
     }
 }

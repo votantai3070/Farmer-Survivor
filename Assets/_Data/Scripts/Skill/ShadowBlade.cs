@@ -7,6 +7,7 @@ public class ShadowBlade : Skill
     [SerializeField] GameObject swordPrefab;
     [SerializeField] int cloneCount = 2; // Số kiếm phân thân
     [SerializeField] float cloneDelay = 0.1f; // Delay giữa các clone
+    [SerializeField] float swordDelay = 3f;
     [SerializeField] float cloneAlpha = 0.5f; // Độ trong suốt của clone
     [SerializeField] float fireRate = 1f;
     [SerializeField] private float detectionRadius = 5f;
@@ -35,7 +36,7 @@ public class ShadowBlade : Skill
                     float angleOffset = CalculateAngleOffset(dir);
 
                     // Bắn kiếm chính
-                    ShootSword(target, 1f, angleOffset);
+                    ShootSword(target, 3f, angleOffset);
 
                     // Bắn kiếm phân thân với delay
                     StartCoroutine(ShootClonesForDirection(target, angleOffset));
@@ -84,9 +85,7 @@ public class ShadowBlade : Skill
         // Tính hướng ban đầu
         Vector2 baseDirection = (target.position - player.position).normalized;
 
-        float radius = 1f;
-
-        sword.transform.position = (Vector2)player.position + baseDirection * radius;
+        sword.transform.position = (Vector2)player.position + baseDirection;
 
         // Áp dụng góc offset
         float angleInRadians = angleOffset * Mathf.Deg2Rad;
@@ -100,6 +99,8 @@ public class ShadowBlade : Skill
         sword.transform.rotation = Quaternion.Euler(0, 0, angle - 90);
 
         Rigidbody2D rb = sword.GetComponent<Rigidbody2D>();
+        sword.GetComponent<CloseWeaponMovement>().SetWeaponData(weaponData);
+
         if (rb != null)
         {
             rb.linearVelocity = direction * 10f;
@@ -136,21 +137,15 @@ public class ShadowBlade : Skill
         return closest;
     }
 
-    // Upgrade số lượng clone
-    public void UpgradeCloneCount()
+    public override void UpgradeWeaponData(WeaponData weapon)
     {
-        cloneCount++;
-    }
+        base.UpgradeWeaponData(weapon);
 
-    // Upgrade số hướng bắn
-    public void UpgradeNumberOfDirections(int amount)
-    {
-        numberOfDirections += amount;
-    }
+        cloneCount = weaponData.bulletShotSize + 1; // Số kiếm phân thân dựa trên bulletShotSize
+        cloneDelay = weaponData.attackDelayTime;
 
-    // Upgrade góc spread
-    public void UpgradeSpreadAngle(float newAngle)
-    {
-        spreadAngle = newAngle;
+        numberOfDirections = Mathf.Min(10, weaponData.bulletShotSize); // Tăng số hướng bắn với level, tối đa 5 hướng
+        fireRate = 1f / weaponData.fireRate;
+        spreadAngle = weaponData.baseSpreadAngle;
     }
 }

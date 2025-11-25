@@ -40,6 +40,8 @@ public class SwordRain : Skill
 
                 // Cho kiếm rơi xuống
                 Rigidbody2D rb = sword.GetComponent<Rigidbody2D>();
+                sword.GetComponent<CloseWeaponMovement>().SetWeaponData(weaponData);
+
                 if (rb != null)
                 {
                     rb.gravityScale = 0;
@@ -51,8 +53,13 @@ public class SwordRain : Skill
         }
     }
 
-    public void UpgradeSwordCount()
+    public override void UpgradeWeaponData(WeaponData weapon)
     {
-        swordCount += 2;
+        base.UpgradeWeaponData(weapon);
+
+        fallSpeed = weaponData.bulletSpeed;
+        swordCount = weaponData.bulletShotSize;
+        spawnRadius = weaponData.range;
+        fireRate = 1f / weaponData.fireRate;
     }
 }

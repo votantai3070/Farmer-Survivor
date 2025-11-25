@@ -149,6 +149,7 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightIntensityFade.cs" />
     <Compile Include="Assets\_Data\Scripts\Weapons\StoneDestroy.cs" />
     <Compile Include="Assets\_Data\Scripts\Managers\InventoryManager.cs" />
+    <Compile Include="Assets\_Data\Scripts\Interface\IUpgradeable.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_New.cs" />
     <Compile Include="Assets\_Data\Scripts\Menu\ChooseUpgradeCharacter.cs" />
     <Compile Include="Assets\_Data\Scripts\UI\TooltipTrigger.cs" />

@@ -15,7 +15,7 @@ MonoBehaviour:
   weaponName: BoomerangSword
   level: 1
   description: 
-  weaponType: 0
+  weaponType: 4
   rareColor: {r: 1, g: 1, b: 1, a: 1}
   ingameSprite: 
   bulletSprite: 
@@ -30,11 +30,11 @@ MonoBehaviour:
   bulletShotSize: 1
   currentAmmo: 0
   reserveAmmo: 0
-  fireRate: 10
+  fireRate: 0.5
   attackDelayTime: 0.1
   reloadTime: 2
   isAutomatic: 1
-  baseSpreadAngle: 2
+  baseSpreadAngle: 30
   stamina: 1
   averageDamage: 3.5
-  DPS: 35
+  DPS: 1.75

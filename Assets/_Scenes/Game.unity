@@ -3666,10 +3666,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillType: 2
-  skillHolders:
-  - {fileID: 1267150552}
-  - {fileID: 1704555991}
-  - {fileID: 1040779764}
   player: {fileID: 2953017084707564543}
   swordPrefab: {fileID: 8676604280006653852, guid: b4ad1a18ee9702e459b062affd793733, type: 3}
   spawnHeight: 5
@@ -7358,12 +7354,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillType: 1
-  skillHolders:
-  - {fileID: 6968437805292982363}
-  - {fileID: 1248804684}
-  - {fileID: 1284614258}
   player: {fileID: 2953017084707564543}
-  bulletPrefab: {fileID: 8676604280006653852, guid: b4ad1a18ee9702e459b062affd793733, type: 3}
+  bulletPrefab: {fileID: 8676604280006653852, guid: d9846970479a0dd4ebe11d824cf6d47d, type: 3}
   detectionRadius: 10
   fireRate: 1
   bulletSpeed: 2
@@ -13580,12 +13572,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillType: 3
-  skillHolders:
-  - {fileID: 2095913862}
-  - {fileID: 1062095781}
-  - {fileID: 1917753060}
   player: {fileID: 2953017084707564543}
-  swordPrefab: {fileID: 8676604280006653852, guid: b4ad1a18ee9702e459b062affd793733, type: 3}
+  swordPrefab: {fileID: 8676604280006653852, guid: 57861c808def64c4ba98e5b11a459009, type: 3}
   throwDistance: 5
   throwSpeed: 10
   returnSpeed: 8
@@ -14535,14 +14523,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillType: 4
-  skillHolders:
-  - {fileID: 1379855171}
-  - {fileID: 2082942619}
-  - {fileID: 169283654}
   player: {fileID: 2953017084707564543}
-  swordPrefab: {fileID: 8676604280006653852, guid: b4ad1a18ee9702e459b062affd793733, type: 3}
+  swordPrefab: {fileID: 8676604280006653852, guid: 14cabd5fe5c263849beab0086c7b4fc0, type: 3}
   cloneCount: 2
   cloneDelay: 0.1
+  swordDelay: 3
   cloneAlpha: 0.5
   fireRate: 1
   detectionRadius: 5
@@ -16708,10 +16693,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillType: 0
-  skillHolders:
-  - {fileID: 1468852247}
-  - {fileID: 312094551}
-  - {fileID: 549301788}
   player: {fileID: 2953017084707564543}
   swordPrefab: {fileID: 2534243422503077503, guid: e9931e3ee5e1831458056e4261dfeaec, type: 3}
   radius: 2

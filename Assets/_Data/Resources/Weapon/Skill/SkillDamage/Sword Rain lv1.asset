@@ -15,7 +15,7 @@ MonoBehaviour:
   weaponName: Sword Rain
   level: 1
   description: 
-  weaponType: 0
+  weaponType: 4
   rareColor: {r: 1, g: 1, b: 1, a: 1}
   ingameSprite: 
   bulletSprite: 
@@ -24,17 +24,17 @@ MonoBehaviour:
   lastDamage: 5
   criticalChange: 0.2
   criticalDamage: 2
-  range: 50
+  range: 5
   bulletSpeed: 10
   magazineSize: 30
   bulletShotSize: 5
   currentAmmo: 0
   reserveAmmo: 0
-  fireRate: 10
+  fireRate: 0.5
   attackDelayTime: 0.1
   reloadTime: 2
   isAutomatic: 1
   baseSpreadAngle: 2
   stamina: 1
   averageDamage: 4.5
-  DPS: 45
+  DPS: 2.25

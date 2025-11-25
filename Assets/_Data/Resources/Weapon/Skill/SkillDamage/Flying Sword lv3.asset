@@ -24,17 +24,17 @@ MonoBehaviour:
   lastDamage: 8
   criticalChange: 0.2
   criticalDamage: 1
-  range: 0
-  bulletSpeed: 0
+  range: 10
+  bulletSpeed: 10
   magazineSize: 0
   bulletShotSize: 5
   currentAmmo: 3
   reserveAmmo: 0
-  fireRate: 0
+  fireRate: 5
   attackDelayTime: 0
   reloadTime: 0
   isAutomatic: 0
   baseSpreadAngle: 0
   stamina: 0
   averageDamage: 7
-  DPS: 0
+  DPS: 35

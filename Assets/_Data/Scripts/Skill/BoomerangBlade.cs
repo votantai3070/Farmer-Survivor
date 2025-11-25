@@ -55,6 +55,8 @@ public class BoomerangBlade : Skill
     {
         GameObject sword = ObjectPool.instance.GetObject(swordPrefab);
 
+        sword.GetComponent<CloseWeaponMovement>().SetWeaponData(weaponData);
+
         // Tắt trigger để tránh return sớm
         Collider2D col = sword.GetComponent<Collider2D>();
         if (col != null) col.enabled = false;
@@ -146,15 +148,15 @@ public class BoomerangBlade : Skill
         return closest;
     }
 
-    // Hàm upgrade để tăng số lượng kiếm
-    public void UpgradeNumberOfSwords(int amount)
+    public override void UpgradeWeaponData(WeaponData weapon)
     {
-        numberOfSwords += amount;
-    }
+        base.UpgradeWeaponData(weapon);
 
-    // Hàm upgrade để thay đổi góc spread
-    public void UpgradeSpreadAngle(float newSpreadAngle)
-    {
-        spreadAngle = newSpreadAngle;
+        numberOfSwords = weaponData.bulletShotSize;
+        spreadAngle = weaponData.baseSpreadAngle;
+        throwDistance = weaponData.range;
+        throwSpeed = weaponData.bulletSpeed;
+        fireRate = 1f / weaponData.fireRate;
+        returnSpeed = weaponData.bulletSpeed * 0.8f;
     }
 }
