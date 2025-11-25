@@ -118,6 +118,7 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Melee\IdleState_Melee.cs" />
+    <Compile Include="Assets\_Data\Scripts\WallGenerator.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Player\IdleState_Player.cs" />
     <Compile Include="Assets\_Data\Scripts\Character\Enemy\Enemy_Melee\MoveState_Melee.cs" />
     <Compile Include="Assets\IsometricElfFreeVer\scripts\ShotController.cs" />

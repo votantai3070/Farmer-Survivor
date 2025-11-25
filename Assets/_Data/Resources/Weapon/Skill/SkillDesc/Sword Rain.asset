@@ -15,6 +15,9 @@ MonoBehaviour:
   skillName: Sword Rain
   iconLv1_2: {fileID: 0}
   iconLv3: {fileID: 0}
+  skillPointLv1: 100
+  skillPointLv2: 300
+  skillPointLv3: 500
   descriptionLv1: 'Rain 5 swords from the sky.
 
     Damage: 120 per sword

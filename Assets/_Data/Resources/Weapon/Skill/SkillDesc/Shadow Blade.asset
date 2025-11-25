@@ -15,32 +15,35 @@ MonoBehaviour:
   skillName: Shadow Blade
   iconLv1_2: {fileID: 0}
   iconLv3: {fileID: 0}
+  skillPointLv1: 50
+  skillPointLv2: 150
+  skillPointLv3: 300
   descriptionLv1: 'Create 2 shadow afterimages.
 
-    Damage: 50% of main attack
-    per shadow
+    Damage: 50% of main attack per
+    shadow
 
     Delay: 0.3s after main strike
 
     Passive ability
 
-    Double
-    your strikes.'
+    Double your
+    strikes.'
   descriptionLv2: 'Create 3 shadow afterimages.
 
-    Damage: 60% of main attack
-    per shadow
+    Damage: 60% of main attack per
+    shadow
 
     Delay: 0.2s after main strike
 
     Passive ability
 
-    Triple
-    threat combo.'
+    Triple threat
+    combo.'
   descriptionLv3: 'Create 4 shadow afterimages.
 
-    Damage: 75% of main attack
-    per shadow
+    Damage: 75% of main attack per
+    shadow
 
     Delay: 0.1s between shadows
 

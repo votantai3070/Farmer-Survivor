@@ -15,6 +15,9 @@ MonoBehaviour:
   skillName: Flying Sword
   iconLv1_2: {fileID: -728199165941334140, guid: 6d7e7c5afbaf51546a0dd6e6bfd0ee8d, type: 3}
   iconLv3: {fileID: -6034565895442485441, guid: 02da844fbb9c12a41b350d3be7ef4895, type: 3}
+  skillPointLv1: 0
+  skillPointLv2: 50
+  skillPointLv3: 200
   descriptionLv1: 'Launch 1 sword projectile forward.
 
     Damage: 100

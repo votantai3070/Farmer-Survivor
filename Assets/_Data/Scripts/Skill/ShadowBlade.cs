@@ -7,7 +7,6 @@ public class ShadowBlade : Skill
     [SerializeField] GameObject swordPrefab;
     [SerializeField] int cloneCount = 2; // Số kiếm phân thân
     [SerializeField] float cloneDelay = 0.1f; // Delay giữa các clone
-    [SerializeField] float swordDelay = 3f;
     [SerializeField] float cloneAlpha = 0.5f; // Độ trong suốt của clone
     [SerializeField] float fireRate = 1f;
     [SerializeField] private float detectionRadius = 5f;
@@ -36,7 +35,7 @@ public class ShadowBlade : Skill
                     float angleOffset = CalculateAngleOffset(dir);
 
                     // Bắn kiếm chính
-                    ShootSword(target, 3f, angleOffset);
+                    ShootSword(target, 1f, angleOffset);
 
                     // Bắn kiếm phân thân với delay
                     StartCoroutine(ShootClonesForDirection(target, angleOffset));

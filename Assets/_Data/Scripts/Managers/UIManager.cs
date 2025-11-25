@@ -35,7 +35,7 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        currentAmount = 500;
+        currentAmount = 5000;
         var text = defeatEnemy.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
         text.text = currentAmount.ToString();
 

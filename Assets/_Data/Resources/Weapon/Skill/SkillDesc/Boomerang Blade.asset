@@ -15,10 +15,13 @@ MonoBehaviour:
   skillName: Boomerang Blade
   iconLv1_2: {fileID: 0}
   iconLv3: {fileID: 0}
+  skillPointLv1: 20
+  skillPointLv2: 40
+  skillPointLv3: 100
   descriptionLv1: 'Throw 1 returning sword.
 
-    Damage: 100 (out) + 100 (back)
-    = 200 total
+    Damage: 100 (out) + 100 (back) =
+    200 total
 
     Range: 8m
 
