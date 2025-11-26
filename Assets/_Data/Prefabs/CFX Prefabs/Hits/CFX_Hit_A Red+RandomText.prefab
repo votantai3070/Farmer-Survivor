@@ -9677,6 +9677,7 @@ GameObject:
   - component: {fileID: 19900004}
   - component: {fileID: 11400002}
   - component: {fileID: 2934467859038247862}
+  - component: {fileID: -1564708749355598855}
   m_Layer: 0
   m_Name: CFX_Hit_A Red+RandomText
   m_TagString: FxTemporaire
@@ -14454,3 +14455,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 100004}
+--- !u!114 &-1564708749355598855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a8646cf021a97428daa0c924988c95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 1

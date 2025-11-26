@@ -24,7 +24,7 @@ MonoBehaviour:
   lastDamage: 6
   criticalChange: 0.2
   criticalDamage: 1
-  range: 8
+  range: 12
   bulletSpeed: 7
   magazineSize: 0
   bulletShotSize: 3

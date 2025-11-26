@@ -27,27 +27,37 @@ MonoBehaviour:
 
     Cooldown: 8s
 
-    Call down divine judgment.'
+    Call down divine judgment.
+
+
+    Cost: 100 points'
   descriptionLv2: 'Rain 7 swords from the sky.
 
-    Damage: 150 per sword
+    Damage: 5-6 per sword
 
     Area:
     4m radius
 
     Cooldown: 7.5s
 
-    Increased coverage and power.'
+    Increased coverage and power.
+
+
+    Cost:
+    300 points'
   descriptionLv3: 'Unleash a storm of 12 swords.
 
-    Damage: 180 per sword
+    Damage: 7-8 per sword
 
     Area:
     5m radius
 
     Slow: 30% for 3s
 
-    Cooldown: 7s
+    Cooldown: 3s
 
     Devastate entire groups
-    of enemies.'
+    of enemies.
+
+
+    Cost: 500 points'

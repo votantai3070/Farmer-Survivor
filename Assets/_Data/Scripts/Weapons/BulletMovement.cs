@@ -115,10 +115,8 @@ public class BulletMovement : TakeDamaged
                 CreateNewEffect(hitEffectPrefab);
                 Attack(damagable);
             }
-            //SoundManager.instance.SetSoundState(SoundType.hit);
 
             ReturnToPool(gameObject);
-            ReturnToPool(hitEffectPrefab);
         }
 
         else if (collision.CompareTag("Enemy") && !isEnemyWeapon)
@@ -128,10 +126,9 @@ public class BulletMovement : TakeDamaged
                 CreateNewEffect(hitEffectPrefab);
                 Attack(damagable);
             }
-            SoundManager.instance.SetSoundState(SoundType.hit);
 
+            SoundManager.instance.SetSoundState(SoundType.hit);
             ReturnToPool(gameObject);
-            ReturnToPool(hitEffectPrefab);
         }
     }
 

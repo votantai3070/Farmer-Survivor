@@ -20,31 +20,41 @@ MonoBehaviour:
   skillPointLv3: 200
   descriptionLv1: 'Launch 1 sword projectile forward.
 
-    Damage: 100
+    Damage: 2-4
 
     Range:
     10m
 
     Cooldown: 3s
 
-    Basic but reliable ranged attack.'
+    Basic but reliable ranged attack.
+
+
+    Cost: 0 points'
   descriptionLv2: 'Launch 1 sword projectile forward.
 
-    Damage: 130
+    Damage: 4-6
 
     Range:
     12m
 
     Cooldown: 2.8s
 
-    Pierces through first enemy.'
+    Pierces through first enemy.
+
+
+    Cost: 50 points'
   descriptionLv3: 'Launch 3 swords in a fan pattern.
 
-    Damage: 150 per sword
+    Damage: 6-8
 
     Range:
     15m
 
     Cooldown: 2.5s
 
-    Covers a wide area with devastating power.'
+    Covers a wide area with devastating power.
+
+
+    Cost:
+    200 points'

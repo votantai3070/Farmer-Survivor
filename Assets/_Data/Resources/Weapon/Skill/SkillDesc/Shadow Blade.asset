@@ -28,7 +28,10 @@ MonoBehaviour:
     Passive ability
 
     Double your
-    strikes.'
+    strikes.
+
+
+    Cost: 50 points'
   descriptionLv2: 'Create 3 shadow afterimages.
 
     Damage: 60% of main attack per
@@ -39,7 +42,10 @@ MonoBehaviour:
     Passive ability
 
     Triple threat
-    combo.'
+    combo.
+
+
+    Cost: 150 points'
   descriptionLv3: 'Create 4 shadow afterimages.
 
     Damage: 75% of main attack per
@@ -47,9 +53,10 @@ MonoBehaviour:
 
     Delay: 0.1s between shadows
 
-    Stun Chance: 15% for 0.5s
+    Passive ability
 
-    Passive
-    ability
+    Phantom blade
+    mastery.
 
-    Phantom blade mastery.'
+
+    Cost: 300 points'

@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class Enemy_MeleeAttack : MonoBehaviour
@@ -8,8 +7,6 @@ public class Enemy_MeleeAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Debug.Log("collision: " + collision);
-
         if (collision.CompareTag("Player"))
         {
             if (collision.TryGetComponent<IDamagable>(out var damagable))
@@ -21,14 +18,8 @@ public class Enemy_MeleeAttack : MonoBehaviour
 
                 damagable.TakeDamage(randomValue);
 
-                StartCoroutine(ReturnPool(effect));
+                ObjectPool.instance.DelayReturnToPool(effect, 1f);
             }
         }
-    }
-
-    IEnumerator ReturnPool(GameObject effect)
-    {
-        yield return new WaitForSeconds(1f);
-        ObjectPool.instance.DelayReturnToPool(effect);
     }
 }
