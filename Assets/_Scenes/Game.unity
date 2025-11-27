@@ -4494,6 +4494,8 @@ MonoBehaviour:
   damagePrefab: {fileID: 5750709807272935550, guid: 49b3863da112abb4db8e50080bc90f25, type: 3}
   normalColor: {r: 0.6981132, g: 0.26673195, b: 0.26673195, a: 0}
   criticalColor: {r: 0.754717, g: 0.4740551, b: 0.10323961, a: 0}
+  popupContainer: {fileID: 0}
+  worldCamera: {fileID: 0}
 --- !u!4 &562378003
 Transform:
   m_ObjectHideFlags: 0
@@ -8163,7 +8165,7 @@ MonoBehaviour:
   bonePrefab: {fileID: 1805347106945079667, guid: 25cd358c26875f14abaa71a2b0924d16, type: 3}
   golemPrefab: {fileID: 794311964374166010, guid: 42a4e64f86c566740a33feae1b7b39e8, type: 3}
   damagePrefab: {fileID: 5750709807272935550, guid: 49b3863da112abb4db8e50080bc90f25, type: 3}
-  hitEffectPrefab: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 3}
+  hitEffectPrefab: {fileID: 100004, guid: f95ff734540a0d749be6571b6cb5b37f, type: 3}
 --- !u!4 &1050181689
 Transform:
   m_ObjectHideFlags: 0

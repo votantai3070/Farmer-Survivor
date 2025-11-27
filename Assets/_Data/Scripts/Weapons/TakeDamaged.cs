@@ -25,6 +25,7 @@ public class TakeDamaged : MonoBehaviour
             ? Random.Range(weaponData.firstDamage, weaponData.lastDamage + 1) * weaponData.criticalDamage
             : Random.Range(weaponData.firstDamage, weaponData.lastDamage + 1));
 
+
         target.TakeDamage(Mathf.FloorToInt(curentDamage), isCrit);
     }
 

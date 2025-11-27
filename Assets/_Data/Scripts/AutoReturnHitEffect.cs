@@ -42,7 +42,7 @@ public class AutoReturnHitEffect : MonoBehaviour
     {
         if (ObjectPool.instance != null)
         {
-            ObjectPool.instance.ReturnToPool(gameObject);
+            ObjectPool.instance.DelayReturnToPool(gameObject);
         }
     }
 }
